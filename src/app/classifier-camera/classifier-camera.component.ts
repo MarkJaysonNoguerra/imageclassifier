@@ -8,7 +8,7 @@ import * as tf from '@tensorflow/tfjs';
   templateUrl: './classifier-camera.component.html',
   styleUrls: ['./classifier-camera.component.css']
 })
-export class ClassifierCameraComponent implements OnInit {
+export class ClassifierCameraComponent implements OnInit, AfterViewInit {
 
   @ViewChild('video', {static: false}) video: ElementRef;
   predictions: Prediction[];
@@ -30,7 +30,7 @@ export class ClassifierCameraComponent implements OnInit {
   async ngAfterViewInit() {
     const vid = this.video.nativeElement;
     if (navigator.mediaDevices.getUserMedia) {
-      navigator.mediaDevices.getUserMedia({ video: true })
+      navigator.mediaDevices.getUserMedia({ video: { facingMode : 'environment'}})
         .then((stream) => {
           vid.srcObject = stream;
         })
