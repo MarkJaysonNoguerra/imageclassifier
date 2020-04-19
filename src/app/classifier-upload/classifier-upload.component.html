@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="file-upload">
+      <input type="file" class="custom-file-input" (change)="fileChangeEvent($event)">
+    </div>
+  
+    <div *ngIf="loading; else elseBlock">
+      <img src="./assets/loading.gif">
+    </div>
+  
+    <ng-template #elseBlock>
+      <img [src]="imageSrc" #img *ngIf="imageSrc"/>
+    </ng-template>
+  
+    <div class="prediction" *ngIf="predictions">
+        <h1>{{predictions[0].className}} - {{predictions[0].probability * 100 | number : '1.2-2'}}%</h1>
+    </div>
+</div>

@@ -8,7 +8,7 @@ import * as tf from '@tensorflow/tfjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'img-classification';
+  title = 'image classifier';
 
   imageSrc: string;
   @ViewChild('img', {static: true}) imageEl: ElementRef;

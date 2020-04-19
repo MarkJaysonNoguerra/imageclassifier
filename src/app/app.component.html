@@ -1,38 +1,13 @@
-<div class="cont d-flex justify-content-center align-items-center flex-column">
-
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" (change)="fileChangeEvent($event)">
-    <label class="custom-file-label">Choose file</label>
+<div class="main-container">
+  <div class="header-container">
+    <h1 class="header">Image Classifier</h1>
+    
+    <nav class="my-2 my-md-0 mr-md-3">
+      <button class="btn" routerLink="/upload"><span>Upload</span></button>
+      <button class="btn" routerLink="/cam"><span>Camera</span></button>
+    </nav>
   </div>
-
-  <div *ngIf="loading; else elseBlock">
-    <img src="../assets/loading.gif">
-  </div>
-
-  <ng-template #elseBlock>
-    <img [src]="imageSrc" #img *ngIf="imageSrc"/>
-  </ng-template>
-
-  <div class="list-group">
-    <div class="list-group-item" *ngFor="let prediction of predictions">
-      {{prediction.className}} - {{prediction.probability * 100 | number : '1.2-2'}} %
-    </div>
-  </div>
-
-</div>
-
-
-<div class="d-flex justify-content-center align-items-center flex-column">
-  <video autoplay playsinline muted id="webcam" width="300" height="300" #video></video>
-
-  <div *ngIf="loading">
-    <img src="./assets/loading.gif">
-  </div>
-
-  <div class="list-group">
-    <div class="list-group-item" *ngFor="let prediction of predictions">
-      {{prediction.className}} - {{prediction.probability * 100 | number : '1.2-2'}} %
-
-    </div>
+  <div class="classifier-container">
+    <router-outlet></router-outlet>
   </div>
 </div>
