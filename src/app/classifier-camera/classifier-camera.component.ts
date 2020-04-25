@@ -27,7 +27,6 @@ export class ClassifierCameraComponent implements OnInit, AfterViewInit {
     }, 3000);
   }
   async ngAfterViewInit() {
-    console.log(navigator.userAgent);
     const vid = this.video.nativeElement;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
@@ -35,7 +34,6 @@ export class ClassifierCameraComponent implements OnInit, AfterViewInit {
       navigator.mediaDevices.getUserMedia({ video: { facingMode : {exact: 'user'}}})
         .then((stream) => {
           vid.srcObject = stream;
-          console.log(stream);
         })
         .catch((err0r) => {
           console.log('Something went wrong!');
@@ -44,7 +42,6 @@ export class ClassifierCameraComponent implements OnInit, AfterViewInit {
       navigator.mediaDevices.getUserMedia({ video: { facingMode : {exact: 'environment'}}})
       .then((stream) => {
         vid.srcObject = stream;
-        console.log(stream);
       })
       .catch((err0r) => {
         console.log('Something went wrong!');
