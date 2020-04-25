@@ -1,0 +1,82 @@
+{
+  "configVersion": 1,
+  "timestamp": 1587821397371,
+  "index": "https://markjaysonnoguerra.github.io/imageclassifier/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://markjaysonnoguerra.github.io/imageclassifier/favicon.ico",
+        "https://markjaysonnoguerra.github.io/imageclassifier/index.html",
+        "https://markjaysonnoguerra.github.io/imageclassifier/main-es2015.5188e3bc3fdbc42188fe.js",
+        "https://markjaysonnoguerra.github.io/imageclassifier/main-es5.5188e3bc3fdbc42188fe.js",
+        "https://markjaysonnoguerra.github.io/imageclassifier/manifest.webmanifest",
+        "https://markjaysonnoguerra.github.io/imageclassifier/polyfills-es2015.3ae8b484923378eb5be6.js",
+        "https://markjaysonnoguerra.github.io/imageclassifier/polyfills-es5.42a0ef87f7fe31aed22d.js",
+        "https://markjaysonnoguerra.github.io/imageclassifier/runtime-es2015.c5fa8325f89fc516600b.js",
+        "https://markjaysonnoguerra.github.io/imageclassifier/runtime-es5.c5fa8325f89fc516600b.js",
+        "https://markjaysonnoguerra.github.io/imageclassifier/styles.a8db359f1466d29637cf.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-128x128.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-144x144.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-152x152.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-192x192.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-384x384.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-512x512.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-72x72.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-96x96.png",
+        "https://markjaysonnoguerra.github.io/imageclassifier/assets/loading.gif"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://markjaysonnoguerra.github.io/imageclassifier/assets/loading.gif": "298f9cf40268373e9dbdfc9827cfe49fa657f5a1",
+    "https://markjaysonnoguerra.github.io/imageclassifier/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://markjaysonnoguerra.github.io/imageclassifier/index.html": "b7ceab71d2fde0b7515ff0142d93d8fd2b7cfe9e",
+    "https://markjaysonnoguerra.github.io/imageclassifier/main-es2015.5188e3bc3fdbc42188fe.js": "fb32502010758c09515bbd0d794a81564e28c9d9",
+    "https://markjaysonnoguerra.github.io/imageclassifier/main-es5.5188e3bc3fdbc42188fe.js": "6e854fa11b143a580cee6bde329a70fd7aac0ce4",
+    "https://markjaysonnoguerra.github.io/imageclassifier/manifest.webmanifest": "f94296a1206319fcecba655157302796073d53ad",
+    "https://markjaysonnoguerra.github.io/imageclassifier/polyfills-es2015.3ae8b484923378eb5be6.js": "096e50e2c2b4b504fdae5402bbc8aa9973a56592",
+    "https://markjaysonnoguerra.github.io/imageclassifier/polyfills-es5.42a0ef87f7fe31aed22d.js": "14996d1c458629a035519782a7ea38c1d66c8eca",
+    "https://markjaysonnoguerra.github.io/imageclassifier/runtime-es2015.c5fa8325f89fc516600b.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://markjaysonnoguerra.github.io/imageclassifier/runtime-es5.c5fa8325f89fc516600b.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://markjaysonnoguerra.github.io/imageclassifier/styles.a8db359f1466d29637cf.css": "879041ce4215c789c8684f395965cc9e871d6eee"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
