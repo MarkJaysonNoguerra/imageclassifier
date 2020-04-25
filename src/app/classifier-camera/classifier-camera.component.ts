@@ -17,9 +17,8 @@ export class ClassifierCameraComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   async ngOnInit() {
-    console.log('loading mobilenet model...');
+
     this.model = await mobilenet.load();
-    console.log('Sucessfully loaded model');
     this.loading = false;
 
     setInterval(async () => {
@@ -28,15 +27,28 @@ export class ClassifierCameraComponent implements OnInit, AfterViewInit {
     }, 3000);
   }
   async ngAfterViewInit() {
+    console.log(navigator.userAgent);
     const vid = this.video.nativeElement;
-    if (navigator.mediaDevices.getUserMedia) {
-      navigator.mediaDevices.getUserMedia({ video: { facingMode : 'environment'}})
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (navigator.mediaDevices.getUserMedia && !isMobile) {
+      navigator.mediaDevices.getUserMedia({ video: { facingMode : {exact: 'user'}}})
         .then((stream) => {
           vid.srcObject = stream;
+          console.log(stream);
         })
         .catch((err0r) => {
           console.log('Something went wrong!');
         });
+    } else {
+      navigator.mediaDevices.getUserMedia({ video: { facingMode : {exact: 'environment'}}})
+      .then((stream) => {
+        vid.srcObject = stream;
+        console.log(stream);
+      })
+      .catch((err0r) => {
+        console.log('Something went wrong!');
+      });
     }
   }
 }

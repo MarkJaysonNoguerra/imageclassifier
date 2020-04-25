@@ -21,9 +21,7 @@ export class ClassifierUploadComponent implements OnInit {
   constructor() { }
 
   async ngOnInit() {
-    console.log('loading mobilenet model...');
     this.model = await mobilenet.load();
-    console.log('Sucessfully loaded model');
     this.loading = false;
   }
 
