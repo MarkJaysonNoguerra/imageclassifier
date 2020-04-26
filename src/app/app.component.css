@@ -87,7 +87,17 @@ nav {
         -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
         transform: translateX(-9%) translateY(-25%) rotate(45deg);
     }
-    
+
+    .header-container h1 {
+        font-size : 30px;
+        line-height: 1.6666;
+        font-family: 'Amatic SC', cursive;
+        color : #151515;
+        font-weight: bolder;
+        text-transform: capitalize;
+        letter-spacing: .018rem;
+        word-spacing:  0.03rem;
+    }    
 
 }
 

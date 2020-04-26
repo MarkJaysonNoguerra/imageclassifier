@@ -34,12 +34,14 @@
     background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
 }
 img {
+    min-width: 150px;
+    min-height: 150px;
     max-width: 300px;
     max-height: 300px;
     margin-top : 20px;
 }
 .prediction {
-    max-width: 40%;
+    max-width: 85%;
     text-align: center;
     margin: 0 auto;
 }
@@ -57,7 +59,7 @@ img {
         background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
         border: 1px solid #999;
         border-radius: 3px;
-        padding: 2px 3px;
+        padding: 1px 2px;
         outline: none;
         white-space: nowrap;
         -webkit-user-select: none;
@@ -75,4 +77,8 @@ img {
     .custom-file-input:active::before {
         background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
     }   
+
+    .prediction h1{
+        font-size : 1.2rem;
+    }
 }
