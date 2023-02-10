@@ -10,7 +10,7 @@ import * as tf from '@tensorflow/tfjs';
 })
 export class ClassifierCameraComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('video', {static: false}) video: ElementRef;
+  @ViewChild('video') video: ElementRef;
   predictions: Prediction[];
   model: any;
   loading = true;

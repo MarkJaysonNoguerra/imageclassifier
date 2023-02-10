@@ -10,7 +10,7 @@ import * as mobilenet from '@tensorflow-models/mobilenet';
 export class ClassifierUploadComponent implements OnInit {
 
   imageSrc: string;
-  @ViewChild('img', {static: false}) imageEl: ElementRef;
+  @ViewChild('img') imageEl: ElementRef;
 
   predictions: Prediction[];
 
